@@ -1,0 +1,19 @@
+# .NET build
+bin/
+obj/
+
+# IDE
+.vs/
+.idea/
+
+# User-specific files
+*.user
+*.suo
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
