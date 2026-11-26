@@ -11,15 +11,7 @@ public class RepairRequest
     public OrderStatusEnum orderStatus {get; set;}
     public DateTime CreateAt {get; set;}
 
-    public bool IsValidPhoneNumber(string PhoneNumber)
-    {
-        string pattern = @"\D";
-        string target = "";
-        Regex regex = new Regex(pattern);
-        string checkPhoneNumber = regex.Replace(PhoneNumber, target);
-
-        return checkPhoneNumber.Length >= 9 && checkPhoneNumber.Length <= 12;
-    }
+    
 
     public override string ToString()
     {
